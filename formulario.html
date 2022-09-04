@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<?php
+     $servername = "localhost";
+     $username = "";
+     $password = "";
+     $database = "";
+    ?>
+
+
+<html lang="es">
+<meta charset = "UTF-8">
+<link rel="stylesheet" href="estilo.css">
+<title>Formulario</title>
+
+<center>
+  <body>
+    <a id="link" href="index.html">
+      <div class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="formulario.html">Formulario</a>
+      </div>
+    </a>
+    <br><br><br>
+    <h1>Contacto</h1>
+    <section>
+      
+      <form method="get">
+        <table width='800' cellpadding='6' border='0'>
+          <tr>
+            <td colspan="2" valign='center' align='center'>
+            </td>
+          </tr> 
+          <tr>
+            <td width='25%' valign='top' align='right'>
+              <label>Nombre:</label>
+            </td> 
+            <td>
+              <input type="text" name="nombre_usuario" placeholder="Escribe tu nombre...">
+            </td> 
+          </tr> 
+          <tr> 
+            <td valign='top' align='right'> 
+              <label>Correo:</label>
+            </td> 
+            <td>
+              <input type="email" name="correo" placeholder="Escribe tu correo electronico...">
+            </td> 
+          </tr> 
+          <tr> 
+            <td valign='top' align='right'> 
+              <label>Genero:</label>
+            </td> 
+            <td> 
+              <input type="radio" name="sexo" value="loving" checked>
+              <label>Hombre</label>
+              <input type="radio" name="sexo" value="lazy"> 
+              <label>Mujer</label>
+            </td> 
+          </tr>
+          <tr>
+            <td valign='top' align='right'>
+              <label>Contraseña:</label>
+            </td> 
+            <td>
+              <input type="password" name="contrasena" placeholder="Escribe tu contraseña...">
+            </td> 
+          </tr>
+          <tr>
+            <td valign='top' align='right'>
+              <label>Comentario:</label>
+            </td> 
+            <td>
+              <textarea name="comentario" placeholder="Escribe un comentario..."></textarea>
+            </td> 
+          </tr>
+          <tr>
+            <td valign='top' align='right'>
+              <label>Ciudad:</label>
+            </td> 
+            <td>
+              <select name="select">
+                <option value="value1">Guadalajara</option>
+                <option value="value2">Zapopan</option>
+                <option value="value3">Tonalá</option>
+                <option value="value3">Tlaquepaque</option>
+                <option value="value3">Otra</option>
+              </select>
+            </td> 
+          </tr>
+          <tr>
+            <td valign='top' align='right'>
+              <label>Me interesa contratarte:</label>
+            </td> 
+            <td>
+              <input id="si" type="radio" name="personality" value="si" checked>
+              <label>Si</label>
+              <input id="no" type="radio" name="personality" value="no"> 
+              <label>No</label>
+            </td> 
+          </tr>
+        </table> 
+        <br>
+        <div>
+          <input type="submit" value="Enviar">
+        </div>
+      </form>
+    </section>
+  </body>
+</center>
+</html>
