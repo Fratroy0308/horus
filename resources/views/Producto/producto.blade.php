@@ -7,23 +7,23 @@
 <center>
   <body>
     <br><br><br>
-    <h1>Contacto</h1>
+    <h1>Producto</h1>
     <section>
 
     
-      <form method="post" action="/guardar-contacto">
+      <form method="post" action="/producto">
         @csrf
-        <table width='800' cellpadding='6' border='0'>
+        <table width='400' cellpadding='6' border='0'>
           <tr> 
             <td colspan="2" valign='center' align='center'>
             </td>
           </tr> 
           <tr>
             <td width='25%' valign='top' align='right'>
-              <label for='nombre'>Nombre:</label>
+              <label for='producto'>Producto:</label>
             </td> 
             <td>
-              <input type="text" name="nombre" placeholder="Escribe tu nombre..." required value={{ old('nombre') }} >
+              <input type="text" name="producto" placeholder="Escribe tu nombre..." required value={{ old('nombre') }} >
               @error('nombre')
                 <i>{{ $message }}</i>
               @enderror

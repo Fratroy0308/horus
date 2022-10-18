@@ -1,6 +1,10 @@
 <?php
 use App\Http\Controllers\SitioController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\VentaController;
+use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\ProveedorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +22,12 @@ Route::get('/', function () {
 });
 
 Route::get('/landingpage', [SitioController::class, 'landingpage']);
+//Route::get('/contacto/{codigo?}', [SitioController::class, 'contacto']);
+Route::post('/guardar-contacto', [SitioController::class, 'guardar']);
+Route::resource('/contacto', SitioController::class);
 
-Route::get('/contacto/{codigo?}', [SitioController::class, 'contacto']);
-
+Route::resource('cliente', ClienteController::class);
+Route::resource('venta', VentaController::class);
+Route::resource('proveedor', ProveedorController::class);
+Route::resource('producto', ProductoController::class);
 

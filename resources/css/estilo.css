@@ -1,0 +1,78 @@
+
+
+h1 {
+       color: DodgerBlue;
+       font-style: italic;
+}
+
+h2 {
+       color: dimgray;
+       font-style: italic;
+}
+
+h3 {
+       color: lightcoral;
+       font-style: italic;
+}
+
+h4 {
+       color: black;
+       font-style: italic;
+}
+
+label {
+       font-family: Helvetica, sans-serif;
+       font-size: 16px;
+}
+
+button {
+       background-color: DodgerBlue;
+       border: none;
+       color: white;
+       width: 80px;
+       height: 40px;
+       text-align: center;
+       font-size: 16px;
+       border-radius: 12px;
+}
+
+textarea {
+       color: gray;
+       width: 400px;
+       font-size: 16px;
+       font-family: Arial, Helvetica, sans-serif;
+}
+
+select {
+       color: gray;
+       font-size: 16px;
+       width: 400px;
+       font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text] {
+       width: 400px;
+       font-size: 16px;
+}
+
+input[type=email] {
+       width: 400px;
+       font-size: 16px;
+}
+
+input[type=password] {
+       width: 400px;
+       font-size: 16px;
+}
+
+input[type=submit] {
+       background-color: DodgerBlue;
+       border: none;
+       color: white;
+       width: 80px;
+       height: 40px;
+       text-align: center;
+       font-size: 16px;
+       border-radius: 12px;
+       font-family: Arial, Helvetica, sans-serif;
+}

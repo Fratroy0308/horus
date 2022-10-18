@@ -9,11 +9,10 @@
     <br><br><br>
     <h1>Contacto</h1>
     <section>
-
-    
-      <form method="post" action="/guardar-contacto">
+      <form action="/cliente/{{ $cliente->id }}"| method="post">
         @csrf
-        <table width='800' cellpadding='6' border='0'>
+        @method('patch')
+        <table width='400' cellpadding='6' border='0'>
           <tr> 
             <td colspan="2" valign='center' align='center'>
             </td>
@@ -23,7 +22,7 @@
               <label for='nombre'>Nombre:</label>
             </td> 
             <td>
-              <input type="text" name="nombre" placeholder="Escribe tu nombre..." required value={{ old('nombre') }} >
+              <input type="text" name="nombre"  required value="{{ $cliente->nombre }}">
               @error('nombre')
                 <i>{{ $message }}</i>
               @enderror
@@ -34,7 +33,7 @@
               <label>Correo:</label>
             </td> 
             <td>
-              <input type="email" name="correo" placeholder="Escribe tu correo electronico..." required value={{ old('correo') }}>
+              <input type="email" name="correo"  value="{{ $cliente->correo }}">
               @error('correo')
                 <i>{{ $message }}</i>
               @enderror
@@ -45,7 +44,7 @@
               <label>Comentario:</label>
             </td> 
             <td>
-              <textarea name="comentario" placeholder="Escribe un comentario..." required value={{ old('comentario') }}></textarea>
+              <textarea name="comentario">{{ $cliente->comentario }}</textarea>
               @error('comentario')
                 <i>{{ $message }}</i>
               @enderror
@@ -54,7 +53,7 @@
         </table> 
         <br>
         <div>
-          <input type="submit" value="Enviar">
+          <input type="submit" value="Guardar">
         </div>
       </form>
       <br>

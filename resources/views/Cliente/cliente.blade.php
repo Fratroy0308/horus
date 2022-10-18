@@ -7,13 +7,11 @@
 <center>
   <body>
     <br><br><br>
-    <h1>Contacto</h1>
+    <h1>Contactox</h1>
     <section>
-
-    
-      <form method="post" action="/guardar-contacto">
+      <form method="post" action="/cliente">
         @csrf
-        <table width='800' cellpadding='6' border='0'>
+        <table width='400' cellpadding='6' border='0'>
           <tr> 
             <td colspan="2" valign='center' align='center'>
             </td>
@@ -40,12 +38,23 @@
               @enderror
             </td> 
           </tr> 
+          <tr> 
+            <td valign='top' align='right'> 
+              <label>Telefono:</label>
+            </td> 
+            <td>
+              <input type="tel" name="telefono" placeholder="Escribe tu telefono..." required value={{ old('telefono') }}>
+              @error('correo')
+                <i>{{ $message }}</i>
+              @enderror
+            </td> 
+          </tr> 
           <tr>
             <td valign='top' align='right'>
               <label>Comentario:</label>
             </td> 
             <td>
-              <textarea name="comentario" placeholder="Escribe un comentario..." required value={{ old('comentario') }}></textarea>
+              <textarea name="direccion" placeholder="Escribe tu direccion..." required value={{ old('direccion') }}></textarea>
               @error('comentario')
                 <i>{{ $message }}</i>
               @enderror

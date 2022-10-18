@@ -7,13 +7,13 @@
 <center>
   <body>
     <br><br><br>
-    <h1>Contacto</h1>
+    <h1>Venta</h1>
     <section>
 
     
-      <form method="post" action="/guardar-contacto">
+      <form method="post" action="/venta">
         @csrf
-        <table width='800' cellpadding='6' border='0'>
+        <table width='400' cellpadding='6' border='0'>
           <tr> 
             <td colspan="2" valign='center' align='center'>
             </td>
