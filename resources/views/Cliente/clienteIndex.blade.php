@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Listado de clientes</title>
 </head>
 <body>
-    <h1>Listado de clientes</h1>
+    <h1>Clientes</h1>
+    <h2>Buscar</h2>
+    
+        <input type="text" name="nombre" placeholder="buscar cliente...">
+    <form  method="post">
+        <input type="submit" value="Buscar">
+    </form>
+    
     <ul>
         <table border="1">
             <tr>
                 <th>Id</th>
                 <th>Nombre</th>
                 <th>Correo</th>
-                <th>Comentario</th>
+                <th>Teléfono</th>
+                <th>Dirección</th>
                 <th>Editar</th>
                 <th>Eliminar</th>
             </tr>
@@ -28,7 +36,8 @@
                     </td>
                     <td> {{ $cliente->nombre }} </td>
                     <td> {{ $cliente->correo }} </td>
-                    <td> {{ $cliente->comentario }} </td>
+                    <td> {{ $cliente->telefono }} </td>
+                    <td> {{ $cliente->direccion }} </td>
                     <td> 
                         <a href="/cliente/{{$cliente->id}}/edit">editar</a> 
                     </td>

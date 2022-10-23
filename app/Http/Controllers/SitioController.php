@@ -28,6 +28,11 @@ class SitioController extends Controller
         return view('paginas.landingpage');
     }
 
+    public function menu() 
+    {
+        return view('menu.index');
+    }
+
     public function guardar(Request $request) 
     {
         //dd($request->all());

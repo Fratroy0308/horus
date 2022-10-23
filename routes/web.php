@@ -24,8 +24,10 @@ Route::get('/', function () {
 Route::get('/landingpage', [SitioController::class, 'landingpage']);
 //Route::get('/contacto/{codigo?}', [SitioController::class, 'contacto']);
 Route::post('/guardar-contacto', [SitioController::class, 'guardar']);
-Route::resource('/contacto', SitioController::class);
+//Route::resource('/contacto', SitioController::class);
 
+
+Route::get('/menu', [SitioController::class, 'menu']);
 Route::resource('cliente', ClienteController::class);
 Route::resource('venta', VentaController::class);
 Route::resource('proveedor', ProveedorController::class);

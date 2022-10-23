@@ -39,12 +39,23 @@
               @enderror
             </td> 
           </tr> 
-          <tr>
-            <td valign='top' align='right'>
-              <label>Comentario:</label>
+          <tr> 
+            <td valign='top' align='right'> 
+              <label>Telefono:</label>
             </td> 
             <td>
-              <textarea name="comentario">{{ $cliente->comentario }}</textarea>
+              <input type="tel" name="telefono" placeholder="Escribe tu telefono..." required value="{{ $cliente->telefono }}">
+              @error('correo')
+                <i>{{ $message }}</i>
+              @enderror
+            </td> 
+          </tr> 
+          <tr>
+            <td valign='top' align='right'>
+              <label>Direccion:</label>
+            </td> 
+            <td>
+              <textarea name="direccion">{{ $cliente->direccion }}</textarea>
               @error('comentario')
                 <i>{{ $message }}</i>
               @enderror

@@ -9,9 +9,7 @@
     <br><br><br>
     <h1>Proveedor</h1>
     <section>
-
-    
-      <form method="post" action="/proveedor">
+      <form method="post" action="/cliente">
         @csrf
         <table width='400' cellpadding='6' border='0'>
           <tr> 
@@ -23,7 +21,7 @@
               <label for='nombre'>Nombre:</label>
             </td> 
             <td>
-              <input type="text" name="nombre" placeholder="Escribe tu nombre..." required value={{ old('nombre') }} >
+              <input type="text" name="nombre" placeholder="nombre cliente..." required value={{ old('nombre') }} >
               @error('nombre')
                 <i>{{ $message }}</i>
               @enderror
@@ -34,7 +32,18 @@
               <label>Correo:</label>
             </td> 
             <td>
-              <input type="email" name="correo" placeholder="Escribe tu correo electronico..." required value={{ old('correo') }}>
+              <input type="email" name="correo" placeholder="correo electronico..." required value={{ old('correo') }}>
+              @error('correo')
+                <i>{{ $message }}</i>
+              @enderror
+            </td> 
+          </tr> 
+          <tr> 
+            <td valign='top' align='right'> 
+              <label>Telefono:</label>
+            </td> 
+            <td>
+              <input type="tel" name="telefono" placeholder="teléfono..." required value={{ old('telefono') }}>
               @error('correo')
                 <i>{{ $message }}</i>
               @enderror
@@ -42,10 +51,10 @@
           </tr> 
           <tr>
             <td valign='top' align='right'>
-              <label>Comentario:</label>
+              <label>Direccion:</label>
             </td> 
             <td>
-              <textarea name="comentario" placeholder="Escribe un comentario..." required value={{ old('comentario') }}></textarea>
+              <textarea name="direccion" placeholder="dirección..." required value={{ old('direccion') }}></textarea>
               @error('comentario')
                 <i>{{ $message }}</i>
               @enderror

@@ -7,7 +7,7 @@
 <center>
   <body>
     <br><br><br>
-    <h1>Contactox</h1>
+    <h1>Contacto</h1>
     <section>
       <form method="post" action="/cliente">
         @csrf
@@ -21,7 +21,7 @@
               <label for='nombre'>Nombre:</label>
             </td> 
             <td>
-              <input type="text" name="nombre" placeholder="Escribe tu nombre..." required value={{ old('nombre') }} >
+              <input type="text" name="nombre" placeholder="nombre cliente..." required value={{ old('nombre') }} >
               @error('nombre')
                 <i>{{ $message }}</i>
               @enderror
@@ -32,7 +32,7 @@
               <label>Correo:</label>
             </td> 
             <td>
-              <input type="email" name="correo" placeholder="Escribe tu correo electronico..." required value={{ old('correo') }}>
+              <input type="email" name="correo" placeholder="correo electronico..." required value={{ old('correo') }}>
               @error('correo')
                 <i>{{ $message }}</i>
               @enderror
@@ -43,7 +43,7 @@
               <label>Telefono:</label>
             </td> 
             <td>
-              <input type="tel" name="telefono" placeholder="Escribe tu telefono..." required value={{ old('telefono') }}>
+              <input type="tel" name="telefono" placeholder="teléfono..." required value={{ old('telefono') }}>
               @error('correo')
                 <i>{{ $message }}</i>
               @enderror
@@ -51,10 +51,10 @@
           </tr> 
           <tr>
             <td valign='top' align='right'>
-              <label>Comentario:</label>
+              <label>Direccion:</label>
             </td> 
             <td>
-              <textarea name="direccion" placeholder="Escribe tu direccion..." required value={{ old('direccion') }}></textarea>
+              <textarea name="direccion" placeholder="dirección..." required value={{ old('direccion') }}></textarea>
               @error('comentario')
                 <i>{{ $message }}</i>
               @enderror
