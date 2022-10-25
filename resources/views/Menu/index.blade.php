@@ -13,7 +13,7 @@
                 <a href="/cliente">Clientes</a> 
                 </li>
                 <li>
-                <a href="/producto">Proveedores</a> 
+                <a href="/proveedor">Proveedores</a> 
                 </li>           
             </ul>
         </div>   

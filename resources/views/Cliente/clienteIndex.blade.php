@@ -9,12 +9,14 @@
 <body>
     <h1>Clientes</h1>
     <h2>Buscar</h2>
-    
-        <input type="text" name="nombre" placeholder="buscar cliente...">
+    <form action ="/cliente/create" method="get">
+       <input type="submit" value="agregar">
+    </form>
+    <br>
+    <input type="text" name="nombre" placeholder="buscar cliente...">
     <form  method="post">
         <input type="submit" value="Buscar">
     </form>
-    
     <ul>
         <table border="1">
             <tr>

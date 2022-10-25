@@ -8,10 +8,13 @@
 </head>
 <body>
     <h1>Informacion de cliente</h1>
-    <h2>{{ $cliente->nombre }} </h2>
+    <h2>Nombre: {{ $cliente->nombre }}</h2>
     <p>
-        {{ $cliente->correo }}
-        {{ $cliente->comentario }}
+        Correo: {{ $cliente->correo }}
+        <br>
+        Télefono: {{ $cliente->telefono }}
+        <br>
+        Dirección: {{ $cliente->direccion }}
     </p>
 </body>
 </html>

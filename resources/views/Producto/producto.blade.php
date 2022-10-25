@@ -23,38 +23,49 @@
               <label for='producto'>Producto:</label>
             </td> 
             <td>
-              <input type="text" name="producto" placeholder="Escribe tu nombre..." required value={{ old('nombre') }} >
-              @error('nombre')
+              <input type="text" name="producto" placeholder="Escribe el producto..." required value={{ old('producto') }} >
+              @error('producto')
+                <i>{{ $message }}</i>
+              @enderror
+            </td> 
+          </tr>
+          <tr>
+            <td valign='top' align='right'>
+              <label>Descripción:</label>
+            </td> 
+            <td>
+              <textarea name="descripcion" placeholder="Escribe una descripción..." required value={{ old('descripcion') }}></textarea>
+              @error('descripcion')
+                <i>{{ $message }}</i>
+              @enderror
+            </td> 
+          </tr>
+          <tr> 
+            <td valign='top' align='right'> 
+              <label>Talla:</label>
+            </td> 
+            <td>
+              <input type="text" name="talla" placeholder="Escribe la talla del producto..." required value={{ old('talla') }}>
+              @error('talla')
                 <i>{{ $message }}</i>
               @enderror
             </td> 
           </tr> 
           <tr> 
             <td valign='top' align='right'> 
-              <label>Correo:</label>
+              <label>Precio:</label>
             </td> 
             <td>
-              <input type="email" name="correo" placeholder="Escribe tu correo electronico..." required value={{ old('correo') }}>
-              @error('correo')
+              <input type="number" name="precio" placeholder="Escribe el precio..." required value={{ old('precio') }}>
+              @error('precio')
                 <i>{{ $message }}</i>
               @enderror
             </td> 
           </tr> 
-          <tr>
-            <td valign='top' align='right'>
-              <label>Comentario:</label>
-            </td> 
-            <td>
-              <textarea name="comentario" placeholder="Escribe un comentario..." required value={{ old('comentario') }}></textarea>
-              @error('comentario')
-                <i>{{ $message }}</i>
-              @enderror
-            </td> 
-          </tr>
         </table> 
         <br>
         <div>
-          <input type="submit" value="Enviar">
+          <input type="submit" value="Guardar">
         </div>
       </form>
       <br>

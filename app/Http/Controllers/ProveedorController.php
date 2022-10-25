@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\proveedor;
+use App\Models\producto;
 use Illuminate\Http\Request;
 
 class ProveedorController extends Controller
@@ -14,8 +15,8 @@ class ProveedorController extends Controller
      */
     public function index()
     {
-        $productos = producto::all();
-        return view('producto.productoIndex', compact('productos'));
+        $proveedores = proveedor::all();
+        return view('proveedor.proveedorIndex', compact('proveedores'));
     }
 
     /**
@@ -36,6 +37,16 @@ class ProveedorController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'proveedor' => 'required|max:255|min:3', 
+            'correo' => ['required', 'email'], 
+            'telefono' => 'required', 
+            'direccion' => 'required', 
+        ]);   
+
+        Proveedor::create($request->all());
+
+        return redirect('/proveedor');
         //
     }
 
@@ -47,7 +58,7 @@ class ProveedorController extends Controller
      */
     public function show(proveedor $proveedor)
     {
-        //
+        return view('proveedor.proveedorShow', compact('proveedor'));
     }
 
     /**
@@ -58,7 +69,7 @@ class ProveedorController extends Controller
      */
     public function edit(proveedor $proveedor)
     {
-        //
+        return view('proveedor.proveedorEdit', compact('proveedor'));
     }
 
     /**
@@ -70,7 +81,16 @@ class ProveedorController extends Controller
      */
     public function update(Request $request, proveedor $proveedor)
     {
-        //
+        $request->validate([
+            'proveedor' => 'required|max:255|min:3', 
+            'correo' => ['required', 'email'], 
+            'telefono' => 'required', 
+            'direccion' => 'required', 
+        ]);   
+
+        Proveedor::where('id', $cliente->id)->update($request->except('_token', '_method'));
+
+        return redirect('/proveedor');
     }
 
     /**
@@ -81,6 +101,7 @@ class ProveedorController extends Controller
      */
     public function destroy(proveedor $proveedor)
     {
-        //
+        $proveedor->delete();
+        return redirect('/proveedor');
     }
 }

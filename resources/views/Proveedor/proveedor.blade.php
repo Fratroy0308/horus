@@ -9,7 +9,7 @@
     <br><br><br>
     <h1>Proveedor</h1>
     <section>
-      <form method="post" action="/cliente">
+      <form method="post" action="/proveedor">
         @csrf
         <table width='400' cellpadding='6' border='0'>
           <tr> 
@@ -18,11 +18,11 @@
           </tr> 
           <tr>
             <td width='25%' valign='top' align='right'>
-              <label for='nombre'>Nombre:</label>
+              <label for='proveedor'>Nombre:</label>
             </td> 
             <td>
-              <input type="text" name="nombre" placeholder="nombre cliente..." required value={{ old('nombre') }} >
-              @error('nombre')
+              <input type="text" name="proveedor" placeholder="nombre proveedor..." required value={{ old('proveedor') }} >
+              @error('proveedor')
                 <i>{{ $message }}</i>
               @enderror
             </td> 

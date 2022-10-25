@@ -7,7 +7,7 @@
 <center>
   <body>
     <br><br><br>
-    <h1>Contacto</h1>
+    <h1>Cliente</h1>
     <section>
       <form action="/cliente/{{ $cliente->id }}"| method="post">
         @csrf

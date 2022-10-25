@@ -36,7 +36,16 @@ class ProductoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'producto' => 'required|max:255|min:3', 
+            'descripcion' => 'required', 
+            'talla' => 'required', 
+            'precio' => 'required', 
+        ]);   
+
+        Producto::create($request->all());
+
+        return redirect('/producto');
     }
 
     /**
@@ -47,7 +56,7 @@ class ProductoController extends Controller
      */
     public function show(producto $producto)
     {
-        //
+        return view('producto.productoShow', compact('producto'));
     }
 
     /**
@@ -58,6 +67,7 @@ class ProductoController extends Controller
      */
     public function edit(producto $producto)
     {
+        return view('producto.productoEdit', compact('producto'));
         //
     }
 
@@ -70,7 +80,16 @@ class ProductoController extends Controller
      */
     public function update(Request $request, producto $producto)
     {
-        //
+        $request->validate([
+            'producto' => 'required|max:255|min:3', 
+            'descripcion' => 'required', 
+            'talla' => 'required', 
+            'precio' => 'required', 
+        ]);  
+
+        Producto::where('id', $proveedor->id)->update($request->except('_token', '_method'));
+
+        return redirect('/proveedor');
     }
 
     /**
@@ -81,6 +100,7 @@ class ProductoController extends Controller
      */
     public function destroy(producto $producto)
     {
-        //
+        $producto->delete();
+        return redirect('/producto');
     }
 }
