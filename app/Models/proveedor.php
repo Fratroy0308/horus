@@ -11,4 +11,7 @@ class proveedor extends Model
     protected $fillable = ['proveedor', 'correo', 'telefono', 'direccion'];
     //protected $guarded = ['id', '_token'];
     public $timestamps = false;
+
+
+    
 }

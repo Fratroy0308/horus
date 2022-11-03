@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
-            $table->integer('idproveedor');
+            $table->foreignId('proveedor_id')->constrained();
             $table->string('producto');
             $table->string('descripcion');
             $table->string('talla');

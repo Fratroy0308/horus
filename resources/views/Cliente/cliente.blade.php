@@ -3,7 +3,6 @@
 <meta charset = "UTF-8">
 <link rel="stylesheet" href="estilo.css">
 <title>Formulario</title>
-
 <center>
   <body>
     <br><br><br>

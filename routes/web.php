@@ -33,3 +33,5 @@ Route::resource('venta', VentaController::class);
 Route::resource('proveedor', ProveedorController::class);
 Route::resource('producto', ProductoController::class);
 
+Route::get('/producto/create/{codigo?}', [ProductoController::class, 'show']);
+

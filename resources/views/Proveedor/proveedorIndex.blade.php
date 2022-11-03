@@ -27,7 +27,6 @@
                 <th>Editar</th>
                 <th>Eliminar</th>
             </tr>
-            
             @foreach($proveedores as $proveedor)
                 <tr>
                     <td> 
@@ -36,9 +35,9 @@
                         </a>
                     </td>
                     <td> 
-                        <a href="/proveedor/{{$proveedor->id}}/edit">{{ $proveedor->proveedor }}
-
-                        </a> 
+                    <a href="/proveedor/{{$proveedor->id}}">
+                        {{ $proveedor->proveedor }}
+                    </a> 
                     </td>
                     <td> {{ $proveedor->correo }} </td>
                     <td> {{ $proveedor->telefono }} </td>

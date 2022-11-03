@@ -13,8 +13,9 @@
        <input type="submit" value="agregar">
     </form>
     <br>
-    <input type="text" name="nombre" placeholder="buscar cliente...">
+    
     <form  method="post">
+        <input type="text" name="buscar" placeholder="buscar cliente...">
         <input type="submit" value="Buscar">
     </form>
     <ul>
@@ -36,7 +37,11 @@
                             {{ $cliente->id }} 
                         </a>
                     </td>
-                    <td> {{ $cliente->nombre }} </td>
+                    <td> 
+                        <a href="/cliente/{{$cliente->id}}">
+                            {{ $cliente->nombre }} 
+                        </a>
+                    </td>
                     <td> {{ $cliente->correo }} </td>
                     <td> {{ $cliente->telefono }} </td>
                     <td> {{ $cliente->direccion }} </td>
@@ -56,5 +61,6 @@
             
         </table>
     <ul>
+    
 </body>
 </html>

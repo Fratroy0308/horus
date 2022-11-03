@@ -9,8 +9,6 @@
     <br><br><br>
     <h1>Producto</h1>
     <section>
-
-    
       <form method="post" action="/producto">
         @csrf
         <table width='400' cellpadding='6' border='0'>

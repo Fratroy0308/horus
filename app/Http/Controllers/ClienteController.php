@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\cliente;
+use App\Models\producto;
+use App\Models\venta;
+use Illuminate\Support\Facades\DB;
+
 use Illuminate\Http\Request;
 
 class ClienteController extends Controller
@@ -57,8 +61,14 @@ class ClienteController extends Controller
      */
     public function show(cliente $cliente)
     {
-        //
-        return view('cliente.clienteShow', compact('cliente'));
+        $productos = producto::all();
+        //$productos = DB::table('proveedors')
+        //->join('productos', 'productos.proveedor_id', '=', 'proveedors.id')
+        //->get();
+
+        $ventas = $cliente->ventas;
+        //$ventas = venta::where('idcliente',  $cliente->id)->get();
+        return view('cliente.clienteShow', compact('cliente', 'ventas', 'productos'));
     }
 
     /**

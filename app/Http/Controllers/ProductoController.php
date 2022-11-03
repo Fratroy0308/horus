@@ -34,9 +34,10 @@ class ProductoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $codigo = null)
     {
         $request->validate([
+            'proveedor_id' => 'required', 
             'producto' => 'required|max:255|min:3', 
             'descripcion' => 'required', 
             'talla' => 'required', 

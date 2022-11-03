@@ -58,7 +58,9 @@ class ProveedorController extends Controller
      */
     public function show(proveedor $proveedor)
     {
-        return view('proveedor.proveedorShow', compact('proveedor'));
+        //$productos = $proveedor->productos;
+        $productos = producto::where('proveedor_id',  $proveedor->id)->get();
+        return view('proveedor.proveedorShow', compact('proveedor', 'productos'));
     }
 
     /**

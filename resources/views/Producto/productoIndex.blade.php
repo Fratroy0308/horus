@@ -10,7 +10,6 @@
     <h1>Productos</h1>
     <h2>Buscar</h2>
     <form action ="/producto/create" method="get">
-       
         <input type="submit" value="agregar">
     </form>
     <input type="text" name="buscar" placeholder="buscar producto...">
@@ -20,31 +19,31 @@
         <table border="1">
             <tr>
                 <th>Id</th>
-                <th>Nombre</th>
-                <th>Correo</th>
-                <th>Teléfono</th>
-                <th>Dirección</th>
+                <th>Producto</th>
+                <th>Descripción</th>
+                <th>Talla</th>
+                <th>Precio</th>
                 <th>Editar</th>
                 <th>Eliminar</th>
             </tr>
             
-            @foreach($clientes as $cliente)
+            @foreach($productos as $producto)
                 <tr>
                     <td> 
-                        <a href="/cliente/{{$cliente->id}}">
-                            {{ $cliente->id }} 
+                        <a href="/producto/{{$producto->id}}">
+                            {{ $producto->id }} 
                         </a>
                     </td>
-                    <td> {{ $cliente->nombre }} </td>
-                    <td> {{ $cliente->correo }} </td>
-                    <td> {{ $cliente->telefono }} </td>
-                    <td> {{ $cliente->direccion }} </td>
+                    <td> {{ $producto->produto }} </td>
+                    <td> {{ $producto->descripcion }} </td>
+                    <td> {{ $producto->talla }} </td>
+                    <td> {{ $producto->precio }} </td>
                     <td> 
-                        <a href="/cliente/{{$cliente->id}}/edit">editar</a> 
+                        <a href="/producto/{{$producto->id}}/edit">editar</a> 
                     </td>
 
                     <td> 
-                        <form action ="/cliente/{{$cliente->id}}" method="post">
+                        <form action ="/producto/{{$producto->id}}" method="post">
                             @csrf
                             @method('DELETE')
                             <input type="submit" value="Eliminar">
