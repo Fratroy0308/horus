@@ -22,7 +22,7 @@ Route::get('/', function () {
 });
 
 Route::get('/landingpage', [SitioController::class, 'landingpage']);
-//Route::get('/contacto/{codigo?}', [SitioController::class, 'contacto']);
+Route::get('/contacto/{codigo?}', [SitioController::class, 'contacto']);
 Route::post('/guardar-contacto', [SitioController::class, 'guardar']);
 //Route::resource('/contacto', SitioController::class);
 
@@ -35,3 +35,13 @@ Route::resource('producto', ProductoController::class);
 
 Route::get('/producto/create/{codigo?}', [ProductoController::class, 'show']);
 
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});

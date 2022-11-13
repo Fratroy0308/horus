@@ -1,560 +1,207 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Horus - Bootstrap 4.0 HTML Template</title>
-    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
-<!--
-Tooplate 2117 Infinite Loop
-https://www.tooplate.com/view/2117-infinite-loop
--->
- 
-  </head>
-  <body>    
-    <!-- Hero section -->
-    <section id="infinite" class="text-white tm-font-big tm-parallax">
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
-        <div class="container">   
-          <div class="tm-next">
-              <a href="#infinite" class="navbar-brand">Horus</a>
-          </div>             
-            
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars navbar-toggler-icon"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#infinite">Inicio</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#whatwedo">Que hacemos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#testimonials">Testimonios</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#gallery">Galeria</a>
-              </li>
-              <li class="nav-item">
-			  	<a class="nav-link tm-nav-link" href="/contacto">Contacto</a>
-              </li>                    
-            </ul>
-          </div>        
-        </div>
-      </nav>
-      
-      <div class="text-center tm-hero-text-container">
-        <div class="tm-hero-text-container-inner">
-            <h2 class="tm-hero-title">Horus</h2>
-            <p class="tm-hero-subtitle">
-              Bootstrap 4.0 Parallax Theme
-              <br>Free HTML Template by TOOPLATE
-            </p>
-        </div>        
-      </div>
-
-
-      <div class="tm-next tm-intro-next">
-        <a href="#whatwedo" class="text-center tm-down-arrow-link">
-          <i class="fas fa-2x fa-arrow-down tm-down-arrow"></i>
-        </a>
-      </div>      
-    </section>
-
-    <section id="whatwedo" class="tm-section-pad-top">
-      
-      <div class="container">
-
-            <div class="row tm-content-box"><!-- first row -->
-                <div class="col-lg-12 col-xl-12">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4 tm-section-title">Que hacemos</h2>
-                        <p class="mb-4 tm-intro-text">
-						Esto es Infinite Loop, una plantilla HTML gratuita de Bootstrap 4.0 
-						con un efecto de paralaje. Este diseño es lo que puede modificar y 
-						usar para sus sitios web. Difunde un mensaje a tus amigos sobre 
-						nuestro sitio web. Gracias por apoyarnos. Si tiene alguna pregunta, 
-						puede contactarnos o chatear con nosotros en nuestra página de
-						  <a href="https://fb.com/tooplate">Facebook de Tooplate</a>.</p>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="aauthor" content="" />
+        <title>Grayscale - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
+                        <a class="btn btn-primary" href="#about">Get Started</a>
                     </div>
                 </div>
-
-            </div><!-- first row -->
-            
-            <div class="row tm-content-box"><!-- second row -->
-        		<div class="col-lg-1">
-                    <i class="far fa-3x fa-chart-bar text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Análisis de mercado</h2>
-                        <p class="mb-4 tm-intro-text">
-						Es solo un carcaj, halaga mi valle.
-						Aenean adorna la élite y el miedo de lacinia, pero siempre objetivos.
-						Es una urna para niños.</p>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">Built with Bootstrap 5</h2>
+                        <p class="text-white-50">
+                            Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
+                            <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
+                            The theme is open source, and you can use it for any purpose, personal or commercial.
+                        </p>
                     </div>
                 </div>
-                
-                <div class="col-lg-1">
-                    <i class="far fa-3x fa-comment-alt text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Soporte rápido</h2>
-                        <p class="mb-4 tm-intro-text">
-						El crédito va a <a rel="nofollow" href="https://www.pexels.com">Pexels</a> 
-						sitio web para todas las imágenes utilizadas en esta plantilla. 
-						Mañana estaré triste y triste.</p>
-                    </div>
-                </div>
-
-            </div><!-- second row -->
-            
-            <div class="row tm-content-box"><!-- third row -->
-        		<div class="col-lg-1">
-                    <i class="fas fa-3x fa-fingerprint text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Máxima seguridad</h2>
-                        <p class="mb-4 tm-intro-text">
-						Tú <strong>no</strong> tienes autoridad para publicar esta plantilla como
-						un archivo ZIP en los sitios web de su colección de plantillas.
-						Puedes <strong>usar</strong> esta plantilla para sus sitios web comerciales.</p>
-                          
-                          <div class="tm-continue">
-                            <a href="#testimonials" class="tm-intro-text tm-btn-primary">Learn More</a>
+                <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Shoreline</h4>
+                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-1">
-                    <i class="fas fa-3x fa-users text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                      <h2 class="tm-text-primary mb-4">Social Work</h2>
-                        <p class="mb-4 tm-intro-text">
-                      You can change <a href="https://fontawesome.com/icons?d=gallery">Font Awesome icons</a> by either <b><em>fas or far</em></b> in the HTML codes. For Examples:<br>
-                      <em>&lt;i class=&quot;fas fa-users&quot;&gt;&lt;i class=&quot;far fa-chart-bar&quot;&gt;</em> </p>
-                          
-                          <div class="tm-continue">
-                            <a href="#testimonials" class="tm-intro-text tm-btn-primary">Details</a>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Misty</h4>
+                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-            </div><!-- third row -->
-
-        </div>
-      
-    </section>
-    
-    <section id="testimonials" class="tm-section-pad-top tm-parallax-2">      
-      <div class="container tm-testimonials-content">
-        <div class="row">
-          <div class="col-lg-12 tm-content-box">
-            <h2 class="text-white text-center mb-4 tm-section-title">Testimonials</h2>
-            <p class="mx-auto tm-section-desc text-center">
-                Nulla dictum sem non eros euismod, eu placerat tortor lobortis. Suspendisse id velit eu libero pellentesque interdum. Etiam quis congue eros.
-              </p>
-            <div class="mx-auto tm-gallery-container tm-gallery-container-2">
-              <div class="tm-testimonials-carousel">
-                <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-01.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>This background image includes a semi-transparent overlay layer. This section also has a parallax image effect.</blockquote>
-                  <figcaption>Catherine Win (Designer)</figcaption>
-                </figure>
-
-                <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-02.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>Testimonial section comes with carousel items. You can use Infinite Loop HTML CSS template for your websites.</blockquote>
-                  <figcaption>Dual Rocker (CEO)</figcaption>
-                </figure>
-
-                <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-03.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>Nulla finibus ligula nec tortor convallis tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus.</blockquote>
-                  <figcaption>Sandar Soft (Marketing)</figcaption>
-                </figure>
-
-                <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-04.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>Curabitur rutrum pharetra lobortis. Pellentesque vehicula, velit quis eleifend fermentum, erat arcu aliquet neque.</blockquote>
-                  <figcaption>Oliva Htoo (Designer)</figcaption>
-                </figure>
-
-                <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-02.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>Integer sit amet risus et erat imperdiet finibus. Nam lacus nunc, vulputate id ex eget, euismod auctor augue.</blockquote>
-                  <figcaption>Jacob Joker (CTO)</figcaption>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tm-bg-overlay"></div>
-    </section>
-    
-    <section id="gallery" class="tm-section-pad-top">
-      <div class="container tm-container-gallery">
-        <div class="row">
-          <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Galeria</h2>
-              <p class="mx-auto tm-section-desc">
-                Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus lacinia, sed iaculis nibh semper. Pellentesque est urna, lobortis eu arcu a, aliquet tristique urna.
-              </p>
-          </div>            
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="mx-auto tm-gallery-container">
-                    <div class="grid tm-gallery">
-                      <a href="img/gallery-img-01.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image 1" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Physical Health <span>Exercise!</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-02.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Image 2" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Rain on Glass <span>Second Image</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-03.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-03.jpg" alt="Image 3" class="img-fluid">
-                          <figcaption>
-                            <h2><i><span>Sea View</span> Mega City</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-04.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-04.jpg" alt="Image 4" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Dream Girl <span>Thoughts</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-05.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-05.jpg" alt="Image 5" class="img-fluid">
-                          <figcaption>
-                            <h2><i><span>Workstation</span> Offices</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-06.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-06.jpg" alt="Image 6" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Just Above <span>The City</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-01.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image 7" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Another <span>Exercise Time</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-02.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Image 8" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Repeated <span>Image Spot</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Mountains</h4>
+                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>                
-            </div>        
-          </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="tm-section-pad-top tm-parallax-2">
-    
-      <div class="container tm-container-contact">
-        
-        <div class="row">
-            
-            <div class="text-center col-12">
-                <h2 class="tm-section-title mb-4">Contactanos</h2>
-                <p class="mb-5">
-				Para un ensayo clínico no hay quien lo asuma, lo invierta o no.
-				Para preparar el escenario para preparar el escenario.
-				Todo el mundo quiere algo que se adapte a sus necesidades.
-				No hay gatillo para dejarlo, nadie está triste.
-                </p><br>
+                </div>
             </div>
-            
-            <div class="col-sm-12 col-md-6">
-              <form action="" method="get">
-                <input id="name" name="name" type="text" placeholder="Nombre" class="tm-input" required />
-                <input id="email" name="email" type="email" placeholder="Correo" class="tm-input" required />
-                <textarea id="message" name="message" rows="8" placeholder="Comentario" class="tm-input" required></textarea>
-                <button type="submit" class="btn tm-btn-submit">Submit</button>
-              </form>
+        </section>
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Email address input-->
+                            <div class="row input-group-newsletter">
+                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                            </div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3 mt-2 text-white">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            
-            <div class="col-sm-12 col-md-6">
-
-                <div class="contact-item">
-                  <a rel="nofollow" href="https://www.tooplate.com/contact" class="item-link">
-                      <i class="far fa-2x fa-comment mr-4"></i>
-                      <span class="mb-0">Chat en linea</span>
-                  </a>              
+        </section>
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Address</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="contact-item">
-                  <a rel="nofollow" href="mailto:mail@company.com" class="item-link">
-                      <i class="far fa-2x fa-envelope mr-4"></i>
-                      <span class="mb-0">mail@company.com</span>
-                  </a>              
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
                 </div>
-                
-                <div class="contact-item">
-                  <a rel="nofollow" href="https://www.google.com/maps" class="item-link">
-                      <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
-                      <span class="mb-0">Our Location</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">
-                  <a rel="nofollow" href="tel:0100200340" class="item-link">
-                      <i class="fas fa-2x fa-phone-square mr-4"></i>
-                      <span class="mb-0">=52 332 211 9352</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">&nbsp;</div>
-            
             </div>
-            
-            
-        </div><!-- row ending -->
-        
-      </div>
-
-      	<footer class="text-center small tm-footer">
-          <p class="mb-0">
-          Copyright &copy; 2020 Company Name 
-          
-          . <a rel="nofollow" href="https://www.tooplate.com" title="HTML templates">Designed by TOOPLATE</a></p>
-        </footer>
-
-    </section>
-    
-    <script src="js/jquery-1.9.1.min.js"></script>     
-    <script src="slick/slick.min.js"></script>
-    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/easing.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>     
-    <script src="js/bootstrap.min.js"></script> 
-    <script>
-
-      function getOffSet(){
-        var _offset = 450;
-        var windowHeight = window.innerHeight;
-
-        if(windowHeight > 500) {
-          _offset = 400;
-        } 
-        if(windowHeight > 680) {
-          _offset = 300
-        }
-        if(windowHeight > 830) {
-          _offset = 210;
-        }
-
-        return _offset;
-      }
-
-      function setParallaxPosition($doc, multiplier, $object){
-        var offset = getOffSet();
-        var from_top = $doc.scrollTop(),
-          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
-        $object.css({"background-position" : bg_css });
-      }
-
-      // Parallax function
-      // Adapted based on https://codepen.io/roborich/pen/wpAsm        
-      var background_image_parallax = function($object, multiplier, forceSet){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        // $object.css({"background-attatchment" : "fixed"});
-
-        if(forceSet) {
-          setParallaxPosition($doc, multiplier, $object);
-        } else {
-          $(window).scroll(function(){          
-            setParallaxPosition($doc, multiplier, $object);
-          });
-        }
-      };
-
-      var background_image_parallax_2 = function($object, multiplier){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        $object.css({"background-attachment" : "fixed"});
-        
-        $(window).scroll(function(){
-          if($(window).width() > 768) {
-            var firstTop = $object.offset().top,
-                pos = $(window).scrollTop(),
-                yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
-
-            var bg_css = 'center ' + yPos + 'px';
-
-            $object.css({"background-position" : bg_css });
-          } else {
-            $object.css({"background-position" : "center" });
-          }
-        });
-      };
-      
-      $(function(){
-        // Hero Section - Background Parallax
-        background_image_parallax($(".tm-parallax"), 0.30, false);
-        background_image_parallax_2($("#contact"), 0.80);   
-        background_image_parallax_2($("#testimonials"), 0.80);   
-        
-        // Handle window resize
-        window.addEventListener('resize', function(){
-          background_image_parallax($(".tm-parallax"), 0.30, true);
-        }, true);
-
-        // Detect window scroll and update navbar
-        $(window).scroll(function(e){          
-          if($(document).scrollTop() > 120) {
-            $('.tm-navbar').addClass("scroll");
-          } else {
-            $('.tm-navbar').removeClass("scroll");
-          }
-        });
-        
-        // Close mobile menu after click 
-        $('#tmNav a').on('click', function(){
-          $('.navbar-collapse').removeClass('show'); 
-        })
-
-        // Scroll to corresponding section with animation
-        $('#tmNav').singlePageNav({
-          'easing': 'easeInOutExpo',
-          'speed': 600
-        });        
-        
-        // Add smooth scrolling to all links
-        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 600, 'easeInOutExpo', function(){
-              window.location.hash = hash;
-            });
-          } // End if
-        });
-
-        // Pop up
-        $('.tm-gallery').magnificPopup({
-          delegate: 'a',
-          type: 'image',
-          gallery: { enabled: true }
-        });
-
-        $('.tm-testimonials-carousel').slick({
-          dots: true,
-          prevArrow: false,
-          nextArrow: false,
-          infinite: false,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 2
-              }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2
-              }
-            }, 
-            {
-              breakpoint: 480,
-              settings: {
-                  slidesToShow: 1
-              }                 
-            }
-          ]
-        });
-
-        // Gallery
-        $('.tm-gallery').slick({
-          dots: true,
-          infinite: false,
-          slidesToShow: 5,
-          slidesToScroll: 2,
-          responsive: [
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-        });
-      });
-    </script>
-  </body>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2022</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
