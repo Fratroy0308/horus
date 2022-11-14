@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite(['resources/css/bootstrap.css', 'resources/js/bootstrap.js'])
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+    </a>
+</nav>
     <title>Document</title>
 </head>
+
 <body>
     <h1>Informacion de cliente</h1>
     <h2>Nombre: {{ $cliente->nombre }}</h2>
@@ -29,28 +35,28 @@
                 <th>Editar</th>
                 <th>Eliminar</th>
             </tr>
-            
+
             @foreach($productos as $producto)
                 <tr>
-                    <td> 
+                    <td>
                         <a href="/producto/{{$producto->proveedor}}">
-                            {{ $producto->proveedor->proveedor }} 
+                            {{ $producto->proveedor->proveedor }}
                         </a>
                     </td>
-                    <td> 
+                    <td>
                         <a href="/producto/{{$producto->id}}">
-                            {{ $producto->id }} 
+                            {{ $producto->id }}
                         </a>
                     </td>
                     <td> {{ $producto->producto }} </td>
                     <td> {{ $producto->descripcion }} </td>
                     <td> {{ $producto->talla }} </td>
                     <td> {{ $producto->precio }} </td>
-                    <td> 
-                        <a href="/producto/{{$producto->id}}/edit">editar</a> 
+                    <td>
+                        <a href="/producto/{{$producto->id}}/edit">editar</a>
                     </td>
 
-                    <td> 
+                    <td>
                         <form action ="/producto/{{$producto->id}}" method="post">
                             @csrf
                             @method('DELETE')
@@ -59,7 +65,7 @@
                     </td>
                 </tr>
             @endforeach
-            
+
         </table>
     <ul>
 </body>
