@@ -26,11 +26,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/index">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="/contacto">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link"href="/cliente">Clientes</a></li>
-                        <li class="nav-item"><a class="nav-link"href="/proveedor">Proveedores</a></li>      
+                        <li class="nav-item"><a class="nav-link"href="/proveedor">Proveedores</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="/login">iniciar sesion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/register">registrar</a></li>     
                     </ul>
                 </div>
             </div>

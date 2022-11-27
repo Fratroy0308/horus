@@ -18,7 +18,7 @@ use App\Http\Controllers\ProveedorController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('menu.index');
 });
 
 Route::get('/landingpage', [SitioController::class, 'landingpage']);
@@ -36,12 +36,16 @@ Route::resource('producto', ProductoController::class);
 Route::get('/producto/create/{codigo?}', [ProductoController::class, 'show']);
 
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
+Route::middleware(['auth:sanctum',config('jetstream.auth_session'), 'verified' 
 ])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
 });
+Route::middleware(['auth:sanctum',config('jetstream.auth_session'), 'verified' 
+])->group(function () {
+    Route::get('/menu', function () {
+        return view('menu');
+    })->name('menu');
+});
+
