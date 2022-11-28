@@ -12,7 +12,7 @@
   </a>
     <ul class="navbar-nav ms-auto">
         <li><a class="btn btn-outline-light" href="/cliente/create" role="button">Añadir cliente</a></li>
-        <li><a class="btn btn-outline-light" href="/landingpage" role="button">INICIO</a></li>
+        <!--<li><a class="btn btn-outline-light" href="/menu" role="button">INICIO</a></li>-->
     </ul>
 </nav>
 </head>

@@ -7,9 +7,9 @@
 <title>Formulario</title>
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="#">
-    <!--<img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">-->
-    GRAYSCALE
+    FASHION_BEAUTY
   </a>
+  <a class="btn btn-outline-light" href="/cliente" role="button">Clientes</a>
 </nav>
 </head>
 

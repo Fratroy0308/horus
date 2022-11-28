@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-<meta charset = "UTF-8">
-<link rel="stylesheet" href="estilo.css">
-<title>Formulario</title>
+<head>
+    <meta charset = "UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Formulario</title>
+    <!--DISEÑO-->
+    @vite(['resources/css/bootstrap.css', 'resources/js/bootstrap.js'])
+    <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+        FASHION_BEAUTY
+    </a>
+    <!--<a class="btn btn-outline-light" href="#" role="button">INICIO</a>-->
+    </nav>
+</head>
 
 <center>
   <body>
@@ -13,55 +23,55 @@
         @csrf
         @method('patch')
         <table width='400' cellpadding='6' border='0'>
-          <tr> 
+          <tr>
             <td colspan="2" valign='center' align='center'>
             </td>
-          </tr> 
+          </tr>
           <tr>
             <td width='25%' valign='top' align='right'>
               <label for='nombre'>Nombre:</label>
-            </td> 
+            </td>
             <td>
               <input type="text" name="proveedor"  required value="{{ $proveedor->proveedor }}">
               @error('nombre')
                 <i>{{ $message }}</i>
               @enderror
-            </td> 
-          </tr> 
-          <tr> 
-            <td valign='top' align='right'> 
+            </td>
+          </tr>
+          <tr>
+            <td valign='top' align='right'>
               <label>Correo:</label>
-            </td> 
+            </td>
             <td>
               <input type="email" name="correo"  value="{{ $proveedor->correo }}">
               @error('correo')
                 <i>{{ $message }}</i>
               @enderror
-            </td> 
-          </tr> 
-          <tr> 
-            <td valign='top' align='right'> 
+            </td>
+          </tr>
+          <tr>
+            <td valign='top' align='right'>
               <label>Telefono:</label>
-            </td> 
+            </td>
             <td>
               <input type="tel" name="telefono" placeholder="Escribe tu telefono..." required value="{{ $proveedor->telefono }}">
               @error('correo')
                 <i>{{ $message }}</i>
               @enderror
-            </td> 
-          </tr> 
+            </td>
+          </tr>
           <tr>
             <td valign='top' align='right'>
               <label>Direccion:</label>
-            </td> 
+            </td>
             <td>
               <textarea name="direccion">{{ $proveedor->direccion }}</textarea>
               @error('comentario')
                 <i>{{ $message }}</i>
               @enderror
-            </td> 
+            </td>
           </tr>
-        </table> 
+        </table>
         <br>
         <div>
           <input type="submit" value="Guardar">
