@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 
 class ProductoController extends Controller
 {
+    public function __Construct(){
+        $this->middleware('auth')->only('create','edit','destroy');
+    }
     /**
      * Display a listing of the resource.
      *
