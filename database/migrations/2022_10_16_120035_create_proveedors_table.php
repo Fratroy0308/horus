@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('correo');
             $table->text('direccion');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

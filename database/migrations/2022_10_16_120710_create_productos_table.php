@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('talla');
             $table->double('precio');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('correo');
             $table->text('comentario');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
