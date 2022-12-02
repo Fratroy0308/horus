@@ -16,4 +16,8 @@ class cliente extends Model
         return $this->hasMany(Venta::class);
     }
 
+    public function archivos()
+    {
+        return $this->hasMany(Archivos::class);
+    }
 }

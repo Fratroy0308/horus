@@ -18,7 +18,7 @@
     <br><br><br>
     <h1>Cliente</h1>
     <section>
-      <form method="post" action="/cliente">
+      <form method="post" action="/cliente" enctype="multipart/form-data">
         @csrf
         <table width='400' cellpadding='6' border='0'>
           <tr>
@@ -70,6 +70,13 @@
             </td>
           </tr>
         </table>
+        <br>
+        <br>
+        <!--Boton de archivos-->
+        <div>
+            <input type="file" id="" name="archivo[]" accept="image/png, image/jpeg, image/jpg, application/x-freearc" ><br>
+        </div>
+        <br>
         <br>
         <div>
           <input type="submit" value="Enviar">

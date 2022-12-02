@@ -41,16 +41,28 @@ class ClienteController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nombre' => 'required|max:255|min:3', 
-            'correo' => ['required', 'email'], 
-            'telefono' => 'required', 
-            'direccion' => 'required', 
-        ]);   
+            'nombre' => 'required|max:255|min:3',
+            'correo' => ['required', 'email'],
+            'telefono' => 'required',
+            'direccion' => 'required',
+        ]);
 
         Cliente::create($request->all());
 
         return redirect('/cliente');
         //
+
+        if($request->file('archivo')->isValid())
+        {
+            $ubicacion = $request->archivo->store('cliente_files');
+
+            $archivo = new Archivos();
+            $archivo->ubicacion = $ubicacion;
+            $archivo->nombre_original = $request->archivo->getClientOriginalName();
+            $archivo->mime = $request->archivo->getClientMimeType();
+
+            $cliente->archivos()->save($archivo);
+        }
     }
 
     /**
@@ -95,11 +107,11 @@ class ClienteController extends Controller
         //
         //dd($request->all());
         $request->validate([
-            'nombre' => 'required|max:255|min:3', 
-            'correo' => ['required', 'email'], 
-            'telefono' => 'required', 
-            'direccion' => 'required', 
-        ]);   
+            'nombre' => 'required|max:255|min:3',
+            'correo' => ['required', 'email'],
+            'telefono' => 'required',
+            'direccion' => 'required',
+        ]);
 
         Cliente::where('id', $cliente->id)->update($request->except('_token', '_method'));
 

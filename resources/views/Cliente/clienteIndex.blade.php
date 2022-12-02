@@ -8,7 +8,7 @@
     @vite(['resources/css/bootstrap.css', 'resources/js/bootstrap.js'])
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="#">
-    GRAYSCALE
+    FASHION_BEAUTY
   </a>
     <ul class="navbar-nav ms-auto">
         <li><a class="btn btn-outline-light" href="/cliente/create" role="button">Añadir cliente</a></li>
