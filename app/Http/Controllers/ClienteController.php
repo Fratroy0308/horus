@@ -127,10 +127,11 @@ class ClienteController extends Controller
      * @param  \App\Models\cliente  $cliente
      * @return \Illuminate\Http\Response
      */
-    public function destroy(cliente $cliente)
+    public function destroy(Cliente $cliente)
     {
-        //
+        $this->authorize('delete',$cliente);
         $cliente->delete();
+        $cliente = Cliente::find($request->cliente_id);
         return redirect('/cliente');
     }
 }

@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('ubicacion');
             $table->string('nombre_original');
             $table->string('mime');
-            $table->timestamps();
+            //$table->timestamps();
         });
     }
 
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //Schema::dropIfExists('archivos');
+        Schema::dropIfExists('archivos');
     }
 };
