@@ -7,6 +7,7 @@
     @vite(['resources/css/bootstrap.css', 'resources/js/bootstrap.js'])
 <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
+    FASHION_BEAUTY
     </a>
 </nav>
     <title>Document</title>

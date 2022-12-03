@@ -10,7 +10,6 @@
     <a class="navbar-brand" href="#">
         FASHION_BEAUTY
     </a>
-    <!--<a class="btn btn-outline-light" href="#" role="button">INICIO</a>-->
     </nav>
 </head>
 <center>

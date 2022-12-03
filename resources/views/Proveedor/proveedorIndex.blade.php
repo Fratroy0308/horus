@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite(['resources/css/bootstrap.css', 'resources/js/bootstrap.js'])
     <title>Listado de Proveedores</title>
-</head>
-<body>
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
         Fashion_beauty
         </a>
     </nav>
+</head>
+<body>
     <h1>Proveedores</h1>
     <h2>Buscar</h2>
     <form action ="/proveedor/create" method="get">
